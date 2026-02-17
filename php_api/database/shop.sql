@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 10, 2026 at 09:14 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.1.12
+-- Generation Time: Feb 17, 2026 at 05:04 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,12 +40,15 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `description`, `image`) VALUES
-(1, 'Notebook ASUS', '28900.00', 'โน้ตบุ๊กสำหรับทำงานและเรียนออนไลน์', 'pic1.jpg'),
-(2, 'iPhone 15', '35900.00', 'สมาร์ทโฟนประสิทธิภาพสูง กล้องคมชัด', 'pic1.jpg'),
-(3, 'Wireless Mouse', '590.00', 'เมาส์ไร้สาย ใช้งานสะดวก', 'pic1.jpg'),
-(4, 'Mechanical Keyboard', '2490.00', 'คีย์บอร์ด Mechanical สำหรับเกมและพิมพ์งาน', 'pic1.jpg'),
-(5, 'Monitor 27 นิ้ว', '8900.00', 'จอภาพ Full HD ขนาด 27 นิ้ว', 'pic1.jpg'),
-(6, 'USB-C Hub', '1290.00', 'อะแดปเตอร์แปลง USB-C หลายพอร์ต', 'pic1.jpg');
+(1, 'Notebook ASUS', 28900.00, 'โน้ตบุ๊กสำหรับทำงานและเรียนออนไลน์', 'pic1.jpg'),
+(2, 'iPhone 15', 35900.00, 'สมาร์ทโฟนประสิทธิภาพสูง กล้องคมชัด', 'pic1.jpg'),
+(3, 'Wireless Mouse', 590.00, 'เมาส์ไร้สาย ใช้งานสะดวก', 'pic1.jpg'),
+(4, 'Mechanical Keyboard', 2490.00, 'คีย์บอร์ด Mechanical สำหรับเกมและพิมพ์งาน', 'pic1.jpg'),
+(5, 'Monitor 27 นิ้ว', 8900.00, 'จอภาพ Full HD ขนาด 27 นิ้ว', 'pic1.jpg'),
+(6, 'USB-C Hub', 1290.00, 'อะแดปเตอร์แปลง USB-C หลายพอร์ต', 'pic1.jpg'),
+(12, 'กระเป๋า', 350.00, 'กหดกหดกห', '1771298436_img1.webp'),
+(13, 'Logo IT', 5000.00, 'ออกแบบโลโก้', '1771298904_logo.jpg'),
+(14, 'สมุดรายงานหลากสี', 49.00, 'สมุดรายงานปกแข็งหลากสี', '1771300635_pp1.jpg');
 
 -- --------------------------------------------------------
 
@@ -96,7 +99,7 @@ ALTER TABLE `travel`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `travel`
